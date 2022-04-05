@@ -16,6 +16,10 @@ namespace Domain
 {
     public partial class Form1 : Form
     {
+
+        root Info;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -36,31 +40,48 @@ namespace Domain
         {
             using (WebClient web = new WebClient())
             {
-                string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", txtcity.Text,   APIKey);
-                var Json = web.DownloadString(url);
-                root Info = JsonConvert.DeserializeObject<root>(Json);
 
-                #region Picture
-                picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
-                #endregion
+                try
+                {
+                    string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", txtcity.Text, APIKey);
 
-                #region Condition & Details
-                lblcondicion2.Text = Info.weather[0].main;
-                lbldetalles2.Text = Info.weather[0].description;
+                    var Json = web.DownloadString(url);
 
-                #endregion
+                    Info = JsonConvert.DeserializeObject<root>(Json);
 
-                #region Sunset & Sunrise
-                lblsunset.Text = convertir(Info.sys.sunset).ToLongTimeString();
-                lblsunrise.Text = convertir(Info.sys.sunrise).ToLongTimeString();
 
-                #endregion
+                    #region Picture
+                    picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
+                    #endregion
 
-                #region Wind & Pressure
+                    #region Condition & Details
+                    lblcondicion2.Text = Info.weather[0].main;
+                    lbldetalles2.Text = Info.weather[0].description;
 
-                lblwindspeed.Text = Info.wind.speed.ToString();
-                lblpressure.Text = Info.main.pressure.ToString();
-                #endregion
+                    #endregion
+
+                    #region Sunset & Sunrise
+                    lblsunset.Text = convertir(Info.sys.sunset).ToLongTimeString();
+                    lblsunrise.Text = convertir(Info.sys.sunrise).ToLongTimeString();
+
+                    #endregion
+
+                    #region Wind & Pressure
+
+                    lblwindspeed.Text = Info.wind.speed.ToString();
+                    lblpressure.Text = Info.main.pressure.ToString();
+                    #endregion
+
+
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("El Lugar No Existe","Error",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                    
+                }
+              
+               
 
               
             }
@@ -75,6 +96,11 @@ namespace Domain
             days = days.AddMilliseconds(twentyfourHours).ToLocalTime();
 
             return days;
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
