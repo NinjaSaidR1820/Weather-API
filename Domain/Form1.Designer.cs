@@ -45,6 +45,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.picIcon = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblcondicion2 = new System.Windows.Forms.Label();
+            this.lbldetalles2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,18 +54,18 @@
             // 
             this.lbcity.AutoSize = true;
             this.lbcity.BackColor = System.Drawing.Color.Transparent;
-            this.lbcity.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbcity.Font = new System.Drawing.Font("Times New Roman", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbcity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.lbcity.Location = new System.Drawing.Point(65, 104);
             this.lbcity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbcity.Name = "lbcity";
-            this.lbcity.Size = new System.Drawing.Size(30, 13);
+            this.lbcity.Size = new System.Drawing.Size(45, 24);
             this.lbcity.TabIndex = 0;
             this.lbcity.Text = "City";
             // 
             // txtcity
             // 
-            this.txtcity.Location = new System.Drawing.Point(143, 93);
+            this.txtcity.Location = new System.Drawing.Point(133, 102);
             this.txtcity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcity.Name = "txtcity";
             this.txtcity.Size = new System.Drawing.Size(132, 26);
@@ -174,7 +176,7 @@
             this.lblpressure.BackColor = System.Drawing.Color.Transparent;
             this.lblpressure.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpressure.ForeColor = System.Drawing.Color.White;
-            this.lblpressure.Location = new System.Drawing.Point(480, 329);
+            this.lblpressure.Location = new System.Drawing.Point(547, 317);
             this.lblpressure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblpressure.Name = "lblpressure";
             this.lblpressure.Size = new System.Drawing.Size(41, 22);
@@ -188,7 +190,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(367, 326);
+            this.label3.Location = new System.Drawing.Point(434, 314);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
@@ -201,7 +203,7 @@
             this.lblwindspeed.BackColor = System.Drawing.Color.Transparent;
             this.lblwindspeed.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblwindspeed.ForeColor = System.Drawing.Color.White;
-            this.lblwindspeed.Location = new System.Drawing.Point(480, 245);
+            this.lblwindspeed.Location = new System.Drawing.Point(547, 233);
             this.lblwindspeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblwindspeed.Name = "lblwindspeed";
             this.lblwindspeed.Size = new System.Drawing.Size(41, 22);
@@ -215,12 +217,12 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(359, 242);
+            this.label5.Location = new System.Drawing.Point(348, 229);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 25);
+            this.label5.Size = new System.Drawing.Size(191, 25);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Wind Speed";
+            this.label5.Text = "Velocidad Del Viento";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label4
@@ -229,7 +231,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(359, 326);
+            this.label4.Location = new System.Drawing.Point(426, 314);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(10, 13);
@@ -254,13 +256,41 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(376, 326);
+            this.label1.Location = new System.Drawing.Point(443, 314);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Pressure";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblcondicion2
+            // 
+            this.lblcondicion2.AutoSize = true;
+            this.lblcondicion2.BackColor = System.Drawing.Color.Transparent;
+            this.lblcondicion2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcondicion2.ForeColor = System.Drawing.Color.White;
+            this.lblcondicion2.Location = new System.Drawing.Point(153, 228);
+            this.lblcondicion2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblcondicion2.Name = "lblcondicion2";
+            this.lblcondicion2.Size = new System.Drawing.Size(41, 22);
+            this.lblcondicion2.TabIndex = 16;
+            this.lblcondicion2.Text = "N/A";
+            this.lblcondicion2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lbldetalles2
+            // 
+            this.lbldetalles2.AutoSize = true;
+            this.lbldetalles2.BackColor = System.Drawing.Color.Transparent;
+            this.lbldetalles2.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldetalles2.ForeColor = System.Drawing.Color.White;
+            this.lbldetalles2.Location = new System.Drawing.Point(153, 298);
+            this.lbldetalles2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbldetalles2.Name = "lbldetalles2";
+            this.lbldetalles2.Size = new System.Drawing.Size(41, 22);
+            this.lbldetalles2.TabIndex = 17;
+            this.lbldetalles2.Text = "N/A";
+            this.lbldetalles2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
@@ -269,6 +299,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(905, 530);
+            this.Controls.Add(this.lbldetalles2);
+            this.Controls.Add(this.lblcondicion2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picIcon);
             this.Controls.Add(this.label4);
@@ -315,6 +347,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblcondicion2;
+        private System.Windows.Forms.Label lbldetalles2;
     }
 }
 

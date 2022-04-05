@@ -40,21 +40,29 @@ namespace Domain
                 var Json = web.DownloadString(url);
                 root Info = JsonConvert.DeserializeObject<root>(Json);
 
-
+                #region Picture
                 picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
-                lblcondicion.Text = Info.weather[0].main;
-                lbldetalles.Text = Info.weather[0].description;
+                #endregion
 
+                #region Condition & Details
+                lblcondicion2.Text = Info.weather[0].main;
+                lbldetalles2.Text = Info.weather[0].description;
 
+                #endregion
 
+                #region Sunset & Sunrise
                 lblsunset.Text = convertir(Info.sys.sunset).ToLongTimeString();
                 lblsunrise.Text = convertir(Info.sys.sunrise).ToLongTimeString();
 
+                #endregion
 
+                #region Wind & Pressure
 
                 lblwindspeed.Text = Info.wind.speed.ToString();
                 lblpressure.Text = Info.main.pressure.ToString();
+                #endregion
 
+              
             }
         }
 
