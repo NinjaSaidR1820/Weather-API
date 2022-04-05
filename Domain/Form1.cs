@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Net;
 using Newtonsoft.Json;
 using Main;
+using Main.WheatherInformation;
 
 namespace Domain
 {
@@ -25,7 +26,7 @@ namespace Domain
 
         }
 
-        string APIKey = "5c61e63c6e9600c959150c6ca9326226";
+        string APIKey = "20bc102a5ad776f9690f50e95d1d73d4";
 
         private void btnbuscar_Click(object sender, EventArgs e)
         {
@@ -37,18 +38,35 @@ namespace Domain
             {
                 string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", txtcity.Text,   APIKey);
                 var Json = web.DownloadString(url);
-                WeatherInfo.root Info = JsonConvert.DeserializeObject<WeatherInfo.root>(Json);
+                root Info = JsonConvert.DeserializeObject<root>(Json);
 
 
                 picIcon.ImageLocation = "https://openweathermap.org/img/w/" + Info.weather[0].icon + ".png";
                 lblcondicion.Text = Info.weather[0].main;
                 lbldetalles.Text = Info.weather[0].description;
-                lblsunset.Text = Info.sys.sunset.ToString();
-                lblsunrise.Text = Info.sys.sunrise.ToString();
+
+
+
+                lblsunset.Text = convertir(Info.sys.sunset).ToLongTimeString();
+                lblsunrise.Text = convertir(Info.sys.sunrise).ToLongTimeString();
+
+
+
                 lblwindspeed.Text = Info.wind.speed.ToString();
-                lblpressure.Text = Info.main.preasure.ToString();
+                lblpressure.Text = Info.main.pressure.ToString();
 
             }
+        }
+
+
+        DateTime convertir(long twentyfourHours)
+        {
+
+            DateTime days = new DateTime(1900, 1, 1, 0, 0, 0, 0,  DateTimeKind.Utc).ToLocalTime();
+
+            days = days.AddMilliseconds(twentyfourHours).ToLocalTime();
+
+            return days;
         }
     }
 }

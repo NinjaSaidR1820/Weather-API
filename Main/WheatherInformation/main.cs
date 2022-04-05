@@ -10,7 +10,7 @@ namespace Main.WheatherInformation
     {
         public double temp { get; set; }
 
-        public int preasure { get; set; }
+        public int pressure { get; set; }
         public int humidity { get; set; }
 
     }
