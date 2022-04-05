@@ -54,7 +54,8 @@
             this.lbcity.BackColor = System.Drawing.Color.Transparent;
             this.lbcity.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbcity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lbcity.Location = new System.Drawing.Point(49, 71);
+            this.lbcity.Location = new System.Drawing.Point(65, 104);
+            this.lbcity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbcity.Name = "lbcity";
             this.lbcity.Size = new System.Drawing.Size(30, 13);
             this.lbcity.TabIndex = 0;
@@ -62,9 +63,10 @@
             // 
             // txtcity
             // 
-            this.txtcity.Location = new System.Drawing.Point(107, 64);
+            this.txtcity.Location = new System.Drawing.Point(143, 93);
+            this.txtcity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtcity.Name = "txtcity";
-            this.txtcity.Size = new System.Drawing.Size(100, 20);
+            this.txtcity.Size = new System.Drawing.Size(132, 26);
             this.txtcity.TabIndex = 1;
             // 
             // btnbuscar
@@ -73,9 +75,10 @@
             this.btnbuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbuscar.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbuscar.ForeColor = System.Drawing.Color.White;
-            this.btnbuscar.Location = new System.Drawing.Point(250, 62);
+            this.btnbuscar.Location = new System.Drawing.Point(334, 90);
+            this.btnbuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnbuscar.Size = new System.Drawing.Size(100, 34);
             this.btnbuscar.TabIndex = 2;
             this.btnbuscar.Text = "Buscar";
             this.btnbuscar.UseVisualStyleBackColor = false;
@@ -85,11 +88,12 @@
             // 
             this.lblcondicion.AutoSize = true;
             this.lblcondicion.BackColor = System.Drawing.Color.Transparent;
-            this.lblcondicion.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcondicion.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcondicion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblcondicion.Location = new System.Drawing.Point(36, 211);
+            this.lblcondicion.Location = new System.Drawing.Point(46, 224);
+            this.lblcondicion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblcondicion.Name = "lblcondicion";
-            this.lblcondicion.Size = new System.Drawing.Size(61, 13);
+            this.lblcondicion.Size = new System.Drawing.Size(100, 25);
             this.lblcondicion.TabIndex = 3;
             this.lblcondicion.Text = "Condicion";
             this.lblcondicion.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,11 +102,12 @@
             // 
             this.lbldetalles.AutoSize = true;
             this.lbldetalles.BackColor = System.Drawing.Color.Transparent;
-            this.lbldetalles.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldetalles.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbldetalles.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lbldetalles.Location = new System.Drawing.Point(47, 258);
+            this.lbldetalles.Location = new System.Drawing.Point(47, 295);
+            this.lbldetalles.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbldetalles.Name = "lbldetalles";
-            this.lbldetalles.Size = new System.Drawing.Size(50, 13);
+            this.lbldetalles.Size = new System.Drawing.Size(81, 25);
             this.lbldetalles.TabIndex = 4;
             this.lbldetalles.Text = "Detalles";
             this.lbldetalles.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -111,11 +116,12 @@
             // 
             this.lblamanecer.AutoSize = true;
             this.lblamanecer.BackColor = System.Drawing.Color.Transparent;
-            this.lblamanecer.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblamanecer.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblamanecer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblamanecer.Location = new System.Drawing.Point(30, 311);
+            this.lblamanecer.Location = new System.Drawing.Point(46, 370);
+            this.lblamanecer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblamanecer.Name = "lblamanecer";
-            this.lblamanecer.Size = new System.Drawing.Size(60, 13);
+            this.lblamanecer.Size = new System.Drawing.Size(95, 25);
             this.lblamanecer.TabIndex = 5;
             this.lblamanecer.Text = "Amanecer";
             this.lblamanecer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -124,11 +130,12 @@
             // 
             this.lblsunrise.AutoSize = true;
             this.lblsunrise.BackColor = System.Drawing.Color.Transparent;
-            this.lblsunrise.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsunrise.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsunrise.ForeColor = System.Drawing.Color.White;
-            this.lblsunrise.Location = new System.Drawing.Point(102, 311);
+            this.lblsunrise.Location = new System.Drawing.Point(153, 374);
+            this.lblsunrise.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsunrise.Name = "lblsunrise";
-            this.lblsunrise.Size = new System.Drawing.Size(26, 13);
+            this.lblsunrise.Size = new System.Drawing.Size(41, 22);
             this.lblsunrise.TabIndex = 6;
             this.lblsunrise.Text = "N/A";
             this.lblsunrise.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -137,11 +144,12 @@
             // 
             this.lblsunset.AutoSize = true;
             this.lblsunset.BackColor = System.Drawing.Color.Transparent;
-            this.lblsunset.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblsunset.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblsunset.ForeColor = System.Drawing.Color.White;
-            this.lblsunset.Location = new System.Drawing.Point(102, 368);
+            this.lblsunset.Location = new System.Drawing.Point(153, 458);
+            this.lblsunset.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblsunset.Name = "lblsunset";
-            this.lblsunset.Size = new System.Drawing.Size(26, 13);
+            this.lblsunset.Size = new System.Drawing.Size(41, 22);
             this.lblsunset.TabIndex = 8;
             this.lblsunset.Text = "N/A";
             this.lblsunset.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -150,11 +158,12 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(36, 368);
+            this.label2.Location = new System.Drawing.Point(54, 454);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
+            this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 7;
             this.label2.Text = "Sunset";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -163,11 +172,12 @@
             // 
             this.lblpressure.AutoSize = true;
             this.lblpressure.BackColor = System.Drawing.Color.Transparent;
-            this.lblpressure.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblpressure.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblpressure.ForeColor = System.Drawing.Color.White;
-            this.lblpressure.Location = new System.Drawing.Point(337, 281);
+            this.lblpressure.Location = new System.Drawing.Point(480, 329);
+            this.lblpressure.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblpressure.Name = "lblpressure";
-            this.lblpressure.Size = new System.Drawing.Size(26, 13);
+            this.lblpressure.Size = new System.Drawing.Size(41, 22);
             this.lblpressure.TabIndex = 12;
             this.lblpressure.Text = "N/A";
             this.lblpressure.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -178,7 +188,8 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(271, 281);
+            this.label3.Location = new System.Drawing.Point(367, 326);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 11;
@@ -188,11 +199,12 @@
             // 
             this.lblwindspeed.AutoSize = true;
             this.lblwindspeed.BackColor = System.Drawing.Color.Transparent;
-            this.lblwindspeed.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblwindspeed.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblwindspeed.ForeColor = System.Drawing.Color.White;
-            this.lblwindspeed.Location = new System.Drawing.Point(337, 224);
+            this.lblwindspeed.Location = new System.Drawing.Point(480, 245);
+            this.lblwindspeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblwindspeed.Name = "lblwindspeed";
-            this.lblwindspeed.Size = new System.Drawing.Size(26, 13);
+            this.lblwindspeed.Size = new System.Drawing.Size(41, 22);
             this.lblwindspeed.TabIndex = 10;
             this.lblwindspeed.Text = "N/A";
             this.lblwindspeed.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -201,11 +213,12 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(265, 224);
+            this.label5.Location = new System.Drawing.Point(359, 242);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 13);
+            this.label5.Size = new System.Drawing.Size(113, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Wind Speed";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -216,7 +229,8 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(265, 281);
+            this.label4.Location = new System.Drawing.Point(359, 326);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(10, 13);
             this.label4.TabIndex = 13;
@@ -226,9 +240,10 @@
             // picIcon
             // 
             this.picIcon.BackColor = System.Drawing.Color.Transparent;
-            this.picIcon.Location = new System.Drawing.Point(39, 133);
+            this.picIcon.Location = new System.Drawing.Point(600, 119);
+            this.picIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picIcon.Name = "picIcon";
-            this.picIcon.Size = new System.Drawing.Size(100, 50);
+            this.picIcon.Size = new System.Drawing.Size(218, 148);
             this.picIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picIcon.TabIndex = 14;
             this.picIcon.TabStop = false;
@@ -237,22 +252,23 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label1.Location = new System.Drawing.Point(278, 281);
+            this.label1.Location = new System.Drawing.Point(376, 326);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(82, 25);
             this.label1.TabIndex = 15;
             this.label1.Text = "Pressure";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(905, 530);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picIcon);
             this.Controls.Add(this.label4);
@@ -270,6 +286,8 @@
             this.Controls.Add(this.txtcity);
             this.Controls.Add(this.lbcity);
             this.DoubleBuffered = true;
+            this.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

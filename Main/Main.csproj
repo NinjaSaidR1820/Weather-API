@@ -70,7 +70,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WeatherInfo.cs" />
+    <Compile Include="WheatherInformation\Coord.cs" />
+    <Compile Include="WheatherInformation\main.cs" />
+    <Compile Include="WheatherInformation\root.cs" />
+    <Compile Include="WheatherInformation\sys.cs" />
+    <Compile Include="WheatherInformation\Weather.cs" />
+    <Compile Include="WheatherInformation\wind.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
